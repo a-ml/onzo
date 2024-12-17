@@ -332,13 +332,14 @@ class DebateGUIApp:
                 agents=[moderator, socialist, capitalist],
                 tasks=debate_tasks,
                 verbose=True,  # Ensure verbose mode for more streaming messages
+                output_log_file="_crew_debate_result.md",
                 embedder={
                     "provider": "ollama",
                     "config": {
                         "model": "nomic-embed-text"
                     }
-                },
-                output_log_file="ooooooooo_crew_debate_result.md"
+                }
+                #full_output=True,
             )
             
             result = crew.kickoff()
