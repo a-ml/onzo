@@ -1,3 +1,10 @@
+###########################################################################################
+#  agents process to Simulate a debate between a socialits and a capitalist               #
+#                               thank you!                                                #
+#                                                                                         #
+###########################################################################################
+
+
 import dearpygui.dearpygui as dpg
 import threading
 import queue
